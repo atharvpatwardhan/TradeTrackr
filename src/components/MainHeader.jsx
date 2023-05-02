@@ -7,7 +7,7 @@ const MainHeader = () => {
   return (
     <div className={`text-5xl w-full text-center font-quicksand ${darkMode ? "bg-gray-800" : "bg-white"}`}>
         <br />
-        <span className={darkMode ? "text-orange-500" : "text-indigo-500"}>T  rade Trackr</span>
+        <span className={darkMode ? "text-orange-500" : "text-indigo-500"}>Trade Trackr</span>
     </div>
   )
 }
