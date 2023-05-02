@@ -1,7 +1,7 @@
 const basePath = "https://finnhub.io/api/v1"
 
 export const searchSymbols = async(query) => {
-    const url = `${basePath}/search?q=${query}&token=${process.env.REACT_APP_API_KEY}`;
+    const url = `${basePath}/search?q=${query}&token=ch8ddu9r01qhapm5o250ch8ddu9r01qhapm5o25g`;
     const response = await fetch(url);
 
     if(!response.ok){
@@ -13,7 +13,7 @@ export const searchSymbols = async(query) => {
 };
 
 export const fetchStock = async (stockSymbol) => {
-    const url = `${basePath}/stock/profile2?symbol=${stockSymbol}&token=${process.env.REACT_APP_API_KEY}`;
+    const url = `${basePath}/stock/profile2?symbol=${stockSymbol}&token=ch8ddu9r01qhapm5o250ch8ddu9r01qhapm5o25g`;
     const response = await fetch(url);
 
     if(!response.ok){
@@ -27,7 +27,7 @@ export const fetchStock = async (stockSymbol) => {
 
 
 export const fetchQuote = async (stockSymbol) => {
-    const url = `${basePath}/quote?symbol=${stockSymbol}&token=${process.env.REACT_APP_API_KEY}`;
+    const url = `${basePath}/quote?symbol=${stockSymbol}&token=ch8ddu9r01qhapm5o250ch8ddu9r01qhapm5o25g`;
     const response = await fetch(url);
 
     if(!response.ok){
@@ -41,7 +41,7 @@ export const fetchQuote = async (stockSymbol) => {
 
 
 export const fetchHistoricalData = async (stockSymbol,resolution,start,end) => {
-    const url = `${basePath}/stock/candle?symbol=${stockSymbol}&resolution=${resolution}&from=${start}&to=${end}&token=${process.env.REACT_APP_API_KEY}`;
+    const url = `${basePath}/stock/candle?symbol=${stockSymbol}&resolution=${resolution}&from=${start}&to=${end}&token=ch8ddu9r01qhapm5o250ch8ddu9r01qhapm5o25g`;
     const response = await fetch(url);
 
     if(!response.ok){
@@ -54,7 +54,7 @@ export const fetchHistoricalData = async (stockSymbol,resolution,start,end) => {
 };
 
 export const fetchNews = async (category) => {
-    const url = `${basePath}/news?category=${category}token=${process.env.REACT_APP_API_KEY}`;
+    const url = `${basePath}/news?category=${category}token=ch8ddu9r01qhapm5o250ch8ddu9r01qhapm5o25g`;
     const response = await fetch(url);
 
     if(!response.ok){
